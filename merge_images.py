@@ -14,7 +14,7 @@ class MergeImages:
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("image",)
     FUNCTION = "merge"
-    CATEGORY = "image/postprocessing"
+    CATEGORY = "custom_utils/image"
 
     def merge(self, images):
         # images.shape: batch, h, w, c
@@ -64,5 +64,5 @@ NODE_CLASS_MAPPINGS = {
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "MergeImages": "MergeImages Node"
+    "MergeImages": "MergeImages"
 }
